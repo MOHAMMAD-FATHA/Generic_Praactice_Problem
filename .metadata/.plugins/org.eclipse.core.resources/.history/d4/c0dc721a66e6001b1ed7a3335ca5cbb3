@@ -1,0 +1,45 @@
+package GenericJava;
+
+import java.util.Scanner;
+
+/*
+ * @Mohammad_Fatha
+ * Purpose to find maximum number among three floating point numbers using findMax method
+ */
+public class findMax {
+
+	private static void compareTo(String n1, String n2, String n3) {
+		// TODO Auto-generated method stub
+		String max = n1;
+		
+		if(n2.compareTo(max) > 0) {
+			System.out.println("The maximum number is : "+max);
+		}
+		if (n3.compareTo(max) > 0) {
+		System.out.println("The maximum number is : "+max);
+		}
+		else {
+			System.out.println(max);
+		}
+}
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Welcome to find maximum of three numbers");
+		String a, b, c;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value of a");
+		a = sc.next();
+		System.out.println("Enter the value of b");
+		b = sc.next();
+		System.out.println("Enter the value of c");
+		c = sc.next();
+		sc.close();
+		compareTo(a, b, c);
+		
+	}
+
+}

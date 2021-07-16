@@ -4,38 +4,40 @@ import java.util.Scanner;
 
 /*
  * @Mohammad_Fatha
- * Purpose to find maximum number among three integer numbers using findMax method
+ * Purpose to find maximum string among three strings using findMax method
  */
 public class findMax {
 
-	private static void compareTo(Integer n1, Integer n2, Integer n3) {
+	private static void compareTo(String s1, String s2, String s3) {
 		// TODO Auto-generated method stub
-		Integer max = n1;
+		String max = s1;
 		
-		if(n2.compareTo(max) > 0) {
-			max = n2;
-		if (n3.compareTo(max) > 0)
-			max = n3;
-		System.out.println("The maximum number is : "+max);
-		
+		if(s2.compareTo(max) > 0) {
+			max = s2;
 		}
+		if (s3.compareTo(max) > 0) {
+			max = s3;
+		}
+		System.out.println("The maximum string is : "+max);
 }
+
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("Welcome to find maximum of three numbers");
-		Integer a, b, c;
+		System.out.println("Welcome to find maximum of three string");
+		String a, b, c;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the value of a");
-		a = sc.nextInt();
-		System.out.println("Enter the value of b");
-		b = sc.nextInt();
-		System.out.println("Enter the value of c");
-		c = sc.nextInt();
+		System.out.println("Enter the string of a");
+		a = sc.next();
+		System.out.println("Enter the string of b");
+		b = sc.next();
+		System.out.println("Enter the string of c");
+		c = sc.next();
 		sc.close();
 		compareTo(a, b, c);
+		
 	}
 
 }
