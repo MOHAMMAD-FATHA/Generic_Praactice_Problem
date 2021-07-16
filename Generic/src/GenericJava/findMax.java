@@ -4,38 +4,52 @@ import java.util.Scanner;
 
 /*
  * @Mohammad_Fatha
- * Purpose to find maximum number among three integer numbers using findMax method
+ * Purpose to find maximum string among three strings using findMax method
  */
-public class findMax {
-
-	private static void compareTo(Integer n1, Integer n2, Integer n3) {
+public class findMax <T extends Comparable<T>>{
+ T a,b,c;
+ 
+	public findMax(T a, T b, T c) {
+		this.a=a;
+		this.b=b;
+		this.c=c;
+	}
+	private static <T extends Comparable<T>> void compareTo(T s1, T s2, T s3) {
 		// TODO Auto-generated method stub
-		Integer max = n1;
-		
-		if(n2.compareTo(max) > 0) {
-			max = n2;
-		if (n3.compareTo(max) > 0)
-			max = n3;
-		System.out.println("The maximum number is : "+max);
-		
+		T max = s1;
+
+		if (s2.compareTo(max) > 0) {
+			max = s2;
 		}
-}
-	
-	
+		if (s3.compareTo(max) > 0) {
+			max = s3;
+		}
+		System.out.println("The maximum among three is : " + max);
+	}
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		System.out.println("Welcome to find maximum of three numbers");
 		Integer a, b, c;
+		Float F1, F2, F3;
+		String S1, S2, S3;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the value of a");
+		System.out.println("Enter the three integers");
 		a = sc.nextInt();
-		System.out.println("Enter the value of b");
 		b = sc.nextInt();
-		System.out.println("Enter the value of c");
 		c = sc.nextInt();
-		sc.close();
 		compareTo(a, b, c);
+		System.out.println("Enter the three floats");
+		F1 = sc.nextFloat();
+		F2 = sc.nextFloat();
+		F3 = sc.nextFloat();
+		compareTo(F1, F2, F3);
+		System.out.println("Enter the three strings");
+		S1 = sc.next();
+		S2 = sc.next();
+		S3 = sc.next();
+		compareTo(S1, S2, S3);
+		sc.close();
 	}
 
 }
