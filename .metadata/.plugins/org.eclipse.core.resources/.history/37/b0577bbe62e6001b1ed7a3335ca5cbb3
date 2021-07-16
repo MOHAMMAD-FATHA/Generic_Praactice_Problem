@@ -20,7 +20,6 @@ public class findMax {
 		
 		}
 }
-
 	
 	
 	public static void main(String[] args) {
@@ -37,7 +36,6 @@ public class findMax {
 		c = sc.nextInt();
 		sc.close();
 		compareTo(a, b, c);
-		
 	}
 
 }
