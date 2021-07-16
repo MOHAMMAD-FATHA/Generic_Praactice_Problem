@@ -8,9 +8,9 @@ import java.util.Scanner;
  */
 public class findMax {
 
-	private static void compareTo(Integer n1, Integer n2, Integer n3) {
+	private static void compareTo(Float n1, Float n2, Float n3) {
 		// TODO Auto-generated method stub
-		Integer max = n1;
+		Float max = n1;
 		
 		if(n2.compareTo(max) > 0) {
 			max = n2;
@@ -26,14 +26,14 @@ public class findMax {
 		// TODO Auto-generated method stub
 
 		System.out.println("Welcome to find maximum of three numbers");
-		Integer a, b, c;
+		Float a, b, c;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the value of a");
-		a = sc.nextInt();
+		System.out.print("Enter the value of a");
+		a = sc.nextFloat();
 		System.out.println("Enter the value of b");
-		b = sc.nextInt();
+		b = sc.nextFloat();
 		System.out.println("Enter the value of c");
-		c = sc.nextInt();
+		c = sc.nextFloat();
 		sc.close();
 		compareTo(a, b, c);
 	}
