@@ -23,7 +23,7 @@ public class findMax<T extends Comparable<T>> {
 	/*
 	 * Purpose - Used Generic method to find maximum values
 	 * 
-	 * @parameter - parameters
+	 * @param - parameters
 	 */
 
 	public static <T extends Comparable<T>> T maximum(T[] parameter) {
